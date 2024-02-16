@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+#structure {
+    display: flex;
+    /* Utilisation de Flexbox pour organiser les sections */
+}
+
+#left-section {
+    background-color: #afeeee;
+    /* Fond bleu turquoise */
+    flex: 1;
+    /* Prend autant d'espace que possible */
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    /* Bordure à droite pour la séparation */
+    box-sizing: border-box;
+    /* Inclure la bordure dans la largeur de la boîte */
+}
+
+#right-section {
+    flex: 2;
+    /* Prend deux fois plus d'espace que la partie gauche */
+    padding: 20px;
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #343a40;
+    font-weight: bold;
+}
+
+h4 {
+    color: #343a40;
+    font-weight: normal;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#photo {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+}
