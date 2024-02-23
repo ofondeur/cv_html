@@ -6,62 +6,56 @@ body {
 }
 
 .container {
-    display: flex;
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "header1 header1"
+        "left    right";
 }
 
-.left {
-    flex: 1;
+#header1 {
+    grid-area: header1;
     padding: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
     text-align: center;
-    background-color: #007bff;
-    color: #fff;
 }
 
-.left img {
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-.left h1 {
-    margin-bottom: 10px;
-}
-
-.right {
-    flex: 2;
+#left {
+    grid-area: left;
     padding: 20px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
 }
 
-.right h2 {
-    margin-bottom: 10px;
-    color: #007bff;
+#right {
+    grid-area: right;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
 }
 
-.right .experience,
-.right .education {
+
+
+.experience,
+.education {
     margin-bottom: 20px;
 }
 
-.right h3 {
-    margin-bottom: 5px;
-}
-
-.skills {
-    list-style: none;
-    padding: 0;
-}
-
-.skills li {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    padding: 5px 10px;
-    margin-right: 10px;
+.experience h2,
+.education h2 {
     margin-bottom: 10px;
+}
+
+.experience div,
+.education div {
+    border: 1px solid #ddd;
+    padding: 10px;
     border-radius: 5px;
+}
+
+.experience div h3,
+.education div h3 {
+    margin-bottom: 5px;
 }
