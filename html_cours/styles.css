@@ -10,7 +10,8 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
         "header1 header1"
-        "left    right";
+        "left    right"
+        "bas     bas";
 }
 
 #header1 {
@@ -36,7 +37,18 @@ body {
     text-align: center;
 }
 
+a {
+    color: rgb(50, 30, 160);
+    font-family: times;
+    font-size: large;
+}
 
+#bas {
+    grid-area: bas;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
 
 .experience,
 .education {
@@ -58,4 +70,19 @@ body {
 .experience div h3,
 .education div h3 {
     margin-bottom: 5px;
+}
+
+.skills {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
